@@ -50,7 +50,13 @@ public class yatraTestCases {
 		WebElement dest = driver.findElement(By.xpath("//*[@id=\"BE_flight_form_wrapper\"]/div[1]/div[2]/ul/li[1]/ul/li[3]/div/div/ul/div/div/div/li[3]/div[1]/p[1]"));
 		dest.click();
 		
-	    WebElement clicksearchbtn = home.searchflightBtn();
+		Thread.sleep(5000);
+		
+		WebElement date = driver.findElement(By.cssSelector("#BE_flight_origin_date"));
+		date.sendKeys("18 Aug'21");
+		date.click();
+		
+	        WebElement clicksearchbtn = home.searchflightBtn();
 		clicksearchbtn.click();
 		Thread.sleep(3000);
 
