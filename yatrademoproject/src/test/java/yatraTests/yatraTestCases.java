@@ -44,8 +44,8 @@ public class yatraTestCases {
 		WebElement destination = home.searchFlightDestination();
 		Thread.sleep(5000);
 		
-        destination.sendKeys("Bangalore (BLR)");
-        Thread.sleep(6000);
+                destination.sendKeys("Bangalore (BLR)");
+                Thread.sleep(6000);
         
 		WebElement dest = driver.findElement(By.xpath("//*[@id=\"BE_flight_form_wrapper\"]/div[1]/div[2]/ul/li[1]/ul/li[3]/div/div/ul/div/div/div/li[3]/div[1]/p[1]"));
 		dest.click();
