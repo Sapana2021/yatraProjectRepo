@@ -10,9 +10,10 @@ public class yatrahomepage {
 	
 	WebDriver driver;
 	
+
 	public yatrahomepage(WebDriver driver2) {
 		
-		driver = driver2;
+		this.driver = driver2;
 		
 	}
 	
@@ -29,7 +30,7 @@ public class yatrahomepage {
 	@FindBy(name="flight_destination_date")
     WebElement flightDestinationDate;
 	
-	@FindBy(id="BE_flight_flsearch_btn")
+	@FindBy(xpath="//*[@id=\"BE_flight_flsearch_btn\"]")
 	WebElement flightSearchBtn;
 	
 	
